@@ -17,12 +17,12 @@ Download and extract the training data from Physionet's server
 ```
 cd data
 ./download_raw.sh
-cd ..
 ```
 
 Create reference files for the K-fold cross-validation
 ```
 python data/cross_val_reference_generator.py --K 10
+cd ..
 ```
 
 Run the training script on the 1st fold (indexing starts at 0)
