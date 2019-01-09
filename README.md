@@ -25,9 +25,9 @@ Create reference files for the K-fold cross-validation
 python data/cross_val_reference_generator.py --K 10
 ```
 
-Run the training script on the i^th fold
+Run the training script on the 1st fold (indexing starts at 0)
 ```
-python crossval_training.py 1 --dryrun
+python crossval_training.py 0 --dryrun
 ```
 
-Training for 100 epochs takes ~30 min. average result is F1=0.75 on the validation set.
+Training on RTX 2080 for 100 epochs takes ~30 min. average result is F1=0.75 on the validation set.
